@@ -4,7 +4,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-image:url(/img/meadow2.jpg);
+    background-image: url(/img/meadow2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -37,7 +37,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
-    background-image: url(/img/duck2.png);
+    background-image: url(/img/d-jpg/2.png);
     overflow: visible;
     background-origin: content-box;
     background-position: center;

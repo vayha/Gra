@@ -21,45 +21,36 @@ $(function () {
                             'top': rand2 + '%',
                             'background-color': 'green',
                             duration: 30});
-                    },
+                        
+        /* PONIŻEJ TĄ FUNKCJĘ NAPISAŁEM SAM!!! JESTEM MEGA DUMNY */
+                        if (rand <=50){
+                            $("#kwadrat").css("background-image", "url(/img/d-jpg/2.png)");
+                        }else{
+                            $("#kwadrat").css("background-image", "url(/img/d-jpg/1.png)");
+                        }
+                        }
+                    });
 
                 });
             });
-});
-
-        
+  
 
 
+/*setInterval (function() {
+    var ptak = ["img/d-jpg/1.jpg", "img/d-jpg/2.jpg"];
+     document.getElementById("#kwadrat").style.backgroundImage ="url(" + tla[Math.floor(Math.random() * 2)] + ")";
+}, 1000);*/
 
-
-//  .hide(5000).show(3000)   
     
-//    $('p').each(function(index) {
-//    var size = 10;
-//    $(this).css('font-size', size*(index+1) + 'px');
-//    
-//    // dla każdego kolejnego p powieksz size o 10... wow
-//} );
-//    
+/*$(document).ready(function(){ 
 
+	var n = $("#kwadrat").length;
 
-//$("#kwadrat").css({"background-color": "red", "font-size": "200%"});
+	if (n < 2) {
+		$("body").css("background", "green");
+	} 
+	else {
+		$("body").css("background", "orange");
+	}
 
-    /*
-    var textpar = $('#napis').text();
-    console.log(textpar);
-    
-    $('#napis').text(textpar + ' dodany');
-
-*/
-
-
-
-//
-//var rand = Math.floor((Math.random() * 100));
-//    
-//$('h3').animate({'left' : rand + '%', 'top' : rand + '%'}, 2000, parBack);
-//
-//
-//    top: 46%;
-//    right: 46%;
+});*/
