@@ -10,7 +10,7 @@ $(function () {
 
                 $('#kwadrat').on({
                     'click': function () {
-                        $('.napis').text(textpar + ' GAME OVER ').fadeOut(4000);
+                        $('.napis').text(textpar + ' WESOŁYCH ŚWIĄT ').fadeOut(15000);
 
                     },
                     'mouseover': function () {
@@ -20,8 +20,7 @@ $(function () {
                             'left': rand + '%',
                             'top': rand2 + '%',
                             'background-color': 'green',
-                            duration: 30
-                        });
+                            duration: 30});
                     },
 
                 });
