@@ -5,11 +5,13 @@ $(function () {
             $("button").click(function () {
                 $(this).fadeOut();
 
-                var textpar = $('#napis').text();
+                var textpar = $('').text();
 
 
                 $('#kwadrat').on({
                     'click': function () {
+                        
+                        
                         $('.napis').text(textpar + ' WESOŁYCH ŚWIĄT ').fadeOut(15000);
 
                     },
@@ -32,10 +34,24 @@ $(function () {
                     });
 
                 });
-            });
-  
+            
+  });
+
+document.getElementById('kwadrat').onclick=function(){
+    var score = parseInt(document.getElementById("score").innerHTML);
+    score++;
+    document.getElementById("score").innerHTML = score;
+}
+    
 
 
+/*    if (score <= 4) {
+        function () {
+                        $('.napis').text(textpar + ' WESOŁYCH ŚWIĄT ').fadeOut(15000);
+            
+    }else{ $funcion()};
+
+  */  
 /*setInterval (function() {
     var ptak = ["img/d-jpg/1.jpg", "img/d-jpg/2.jpg"];
      document.getElementById("#kwadrat").style.backgroundImage ="url(" + tla[Math.floor(Math.random() * 2)] + ")";
