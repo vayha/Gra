@@ -24,11 +24,11 @@ $(function () {
                         var score = parseInt(document.getElementById("score").innerHTML); score++;
                         document.getElementById("score").innerHTML = score;
                         
-                        var audio2 = new Audio("/img/hug.mp3"); audio2.play();
+                        var audio2 = new Audio("../img/hug.mp3"); audio2.play();
 /* jesli 5 pkt to...*/                        
                         if (score >= 10) {
                         
-                            var audio3 = new Audio("/img/victory.mp3"); audio3.play();
+                            var audio3 = new Audio("../img/victory.mp3"); audio3.play();
                             
                             $('.napis').text(textpar + ' WYGRANA! WESOŁYCH ŚWIĄT ').fadeOut(6000, reFresh);
                             };
@@ -43,16 +43,16 @@ $(function () {
                     'mouseover': function () {
                         var rand = Math.floor((Math.random() * 100));
                         var rand2 = Math.floor((Math.random() * 100));
-                        $(this).hide(300).show(300).animate({
+                        $(this).animate({
                             'left': rand + '%',
                             'top': rand2 + '%',
                             'background-color': 'green',
                             duration: 500});
                         
                         if (rand <=50){
-                            $("#kwadrat").css("background-image", "url(/img/d-jpg/2.gif)");
+                            $("#kwadrat").css("background-image", "url(../img/d-jpg/2.gif)");
                         }else{
-                            $("#kwadrat").css("background-image", "url(/img/d-jpg/1.gif)");
+                            $("#kwadrat").css("background-image", "url(../img/d-jpg/1.gif)");
                         }
                         }
                     });
