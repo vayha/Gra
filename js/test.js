@@ -43,7 +43,7 @@ $(function () {
                     'mouseover': function () {
                         var rand = Math.floor((Math.random() * 100));
                         var rand2 = Math.floor((Math.random() * 100));
-                        $(this).hide(1).show(1).animate({
+                        $(this).hide(300).show(300).animate({
                             'left': rand + '%',
                             'top': rand2 + '%',
                             'background-color': 'green',
