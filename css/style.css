@@ -39,7 +39,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
-    background-image: url(../img/d-jpg/2.gif);
+    background-image: url(../img/2.gif);
     overflow: visible;
     background-origin: content-box;
     background-position: center;

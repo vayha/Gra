@@ -9,8 +9,8 @@ $(function () {
                 var textpar = $('').text();
 
 /*shotgun*/
-                $( "#box" ).click(function() {
-                var audio = new Audio("/img/shotgun.mp3"); audio.play();   
+                $("#box").click(function () {
+                var audio = new Audio("../img/shotgun.mp3"); audio.play();  
 });
                           
                 
@@ -43,16 +43,16 @@ $(function () {
                     'mouseover': function () {
                         var rand = Math.floor((Math.random() * 100));
                         var rand2 = Math.floor((Math.random() * 100));
-                        $(this).animate({
+                        $(this).hide(500).show(500).animate({
                             'left': rand + '%',
                             'top': rand2 + '%',
                             'background-color': 'green',
                             duration: 500});
                         
                         if (rand <=50){
-                            $("#kwadrat").css("background-image", "url(../img/d-jpg/2.gif)");
+                            $("#kwadrat").css("background-image", "url(../img/2.gif)");
                         }else{
-                            $("#kwadrat").css("background-image", "url(../img/d-jpg/1.gif)");
+                            $("#kwadrat").css("background-image", "url(../img/1.gif)");
                         }
                         }
                     });
