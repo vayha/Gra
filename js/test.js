@@ -25,9 +25,9 @@ $(function () {
                         document.getElementById("score").innerHTML = score;
                         
                         var audio2 = new Audio("../img/hug.mp3"); audio2.play();
-/* jesli 5 pkt to...*/                        
+/* jesli 10 pkt to...*/                        
                         if (score >= 10) {
-                        
+                                            
                             var audio3 = new Audio("../img/victory.mp3"); audio3.play();
                             
                             $('.napis').text(textpar + ' WYGRANA! WESOŁYCH ŚWIĄT ').fadeOut(6000, reFresh);
@@ -43,11 +43,11 @@ $(function () {
                     'mouseover': function () {
                         var rand = Math.floor((Math.random() * 100));
                         var rand2 = Math.floor((Math.random() * 100));
-                        $(this).hide(500).show(500).animate({
+                        $(this).hide(1).show(1).animate({
                             'left': rand + '%',
                             'top': rand2 + '%',
                             'background-color': 'green',
-                            duration: 500});
+                            duration: 300});
                         
                         if (rand <=50){
                             $("#kwadrat").css("background-image", "url(../img/2.gif)");

@@ -50,7 +50,7 @@ body {
 }
 @keyframes spin {
     from {transform: rotate(0deg);}
-    to {transform: rotate(10deg); height: 100px;}
+    to {transform: rotate(-10deg); top: 5px}
 }
 
 
